@@ -72,6 +72,12 @@ if s:lexima
   inoremap <silent><expr> <CR>      compe#confirm(lexima#expand('<LT>CR>', 'i'))
   inoremap <silent><expr> <C-e>     compe#close('<C-e>')
 endif
+
+if s:delimitMate
+  inoremap <silent><expr> <C-Space> compe#complete()
+  inoremap <silent><expr> <CR>      compe#confirm({ 'keys': "\<Plug>delimitMateCR", 'mode': '' })
+  inoremap <silent><expr> <C-e>     compe#close('<C-e>')
+endif
 ```
 
 ## Source configuration
