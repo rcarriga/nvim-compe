@@ -9,7 +9,7 @@ call s:window.set_var('&wrap', 1)
 call s:window.set_var('&conceallevel', 2)
 call s:window.set_var('&breakindent', 1)
 call s:window.set_var('&linebreak', 1)
-call s:window.set_var('&winhighlight', 'NormalFloat:CompeDocumentation')
+call s:window.set_var('&winhighlight', 'NormalFloat:CompeDocumentation,FloatBorder:CompeDocumentationBorder')
 call s:window.set_var('compe_documentation', 1)
 
 let s:document_cache = {}

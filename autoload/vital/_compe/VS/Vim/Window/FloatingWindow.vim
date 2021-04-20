@@ -383,7 +383,7 @@ if has('nvim')
     \   'height': l:style.height,
     \   'focusable': v:true,
     \   'style': 'minimal',
-    \   'border': has_key(l:style, 'border') ? l:style.border : 'none',
+    \   'border': 'single'
     \ }
     if !exists('*win_execute') " We can't detect neovim features via patch version so we try it by function existence.
       unlet l:style.border

@@ -43,6 +43,7 @@ endfunction
 if !hlexists('CompeDocumentation')
   highlight def link CompeDocumentation NormalFloat
 endif
+highlight def link CompeDocumentationBorder FloatBorder
 
 "
 " setup
